@@ -21,8 +21,8 @@
 <script>
 'use strict';
 // Substitua pelos valores do projeto Supabase. Nunca use a chave service_role aqui.
-const SUPABASE_URL = 'COLE_AQUI_A_URL_DO_SUPABASE';
-const SUPABASE_ANON_KEY = 'COLE_AQUI_A_CHAVE_PUBLICAVEL';
+const SUPABASE_URL = '"https://zonvndulxlnwahmfbhfo.supabase.co"';
+const SUPABASE_ANON_KEY = '"sb_publishable_PV037TC2ByWvufp0l93-6Q_PCP4DUXA"';
 const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_ANON_KEY.startsWith('COLE_');
 const sb = configured ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
 const $ = id=>document.getElementById(id);
